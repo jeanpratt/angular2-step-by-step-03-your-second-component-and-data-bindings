@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from './person';
-import { PersonDetailsComponent } from './person-details.component';
 import { PeopleService } from './people.service';
 
 @Component({
   selector: 'people-list',
-  directives: [PersonDetailsComponent],
   template: `
   <!-- this is the new syntax for ng-repeat -->
   <ul>

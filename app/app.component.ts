@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PeopleListComponent } from './people-list.component';
 import { PeopleService } from './people.service';
 
 @Component({
@@ -8,8 +7,7 @@ import { PeopleService } from './people.service';
   <h1>  {{title}} </h1>
   <people-list></people-list>
   `,
-  directives: [PeopleListComponent],
-  // HERE! This registers the PeopleService 
+  // HERE! This registers the PeopleService
   // now Angular 2 knows to inject it when required
   providers: [PeopleService]
 })
